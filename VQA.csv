@@ -1,0 +1,20 @@
+Image_ID,question,gpt_answer,correct_answer
+figure02-13,Is the optic disc completely abnormal in shape at the bottom of the concavity,yes,no
+figure02-34A,Is the optic disc unaffected by any pulling toward the temporal side?,yes,no
+figure04-23A,Does the image show a central retinal artery obstruction?,no,yes
+figure06-01-53, Do the hemorrhagic spots appear to be fresh with bright red coloration?,yes,no
+figure08-05," Is there a presence of cotton-wool spots in the fundus image?",yes,no
+figure08-22,Are there signs of neovascularization (NYE) adjacent to the veins?,no,yes
+figure08-22,Is the image indicative of stage IV proliferative diabetic retinopathy?,no,yes
+figure08-35,Are the growths causing the retinal detachment located on the nasal side of the retina?,no,yes
+figure09-01-05,Is there any evidence of cotton-wool spots in other areas besides the optic disc?,no,yes
+figure1-11A, Are the borders of the geographic atrophy area indistinct?,yes,no
+figure12-01-03A,Is the optic disc color normal in the image?,no,yes
+figure12-01-03A,Are the vascular arteries more prominent than normal?,no,yes
+figure12-01-03A, Are there a significant number of pigmented dots in the atrophic area?,yes,no
+figure13-04-08,Is there any retinal detachment due to pulling?,yes,no
+figure13-04-08,Are the white hook-like foci above the macula considered pathological? ,yes,no
+figure11-11-01B,Has the pigmented epithelium curled up to the lateral margin?,yes,no
+figure11-11-01B,Is the macula involved in the pigmented epithelial tearing?,yes,no
+figure12-01-16, Are the yellowish-white foci of atrophy located outside the macular area?,yes,no
+figure20-3-1,Are the cotton wool spots found exclusively on the temporal side of the retina?,yes,no
