@@ -1,0 +1,9 @@
+.vscode/
+KeepFIT/
+keepfit/
+MM_feature_set/
+weights/
+__pycache__/
+datasets/
+classifiers/
+

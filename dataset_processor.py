@@ -2,13 +2,14 @@ import json
 import torch
 from tqdm import tqdm
 import os
-from transformers import PreTrainedTokenizerFast, PreTrainedModel
+from transformers import DPRContextEncoder, DPRContextEncoderTokenizerFast
 from datasets import Dataset, Features, Value, Sequence
 import multiprocessing
-from sentence_transformers import SentenceTransformer, models 
+
 class TextDatasetProcessor:
-    def __init__(self,  model: PreTrainedModel, device):
+    def __init__(self, model, tokenizer, device):
         self.model = model
+        self.tokenizer = tokenizer
         self.device = device
         multiprocessing.set_start_method('spawn', force=True)
 
@@ -29,10 +30,14 @@ class TextDatasetProcessor:
             else:
                 print(f"Warning: 'contents' is empty or missing for item with chapter '{item['chapter']}' and title '{item['title']}'")
         return titles, texts
+
     def embed_texts(self, dataset):
         def embed(batch):
-            embeddings = self.model.encode(batch['title'], convert_to_tensor=True)
-            embeddings = embeddings.cpu().numpy()  
+            inputs = self.tokenizer(batch['text'], padding=True, truncation=True, max_length=512, return_tensors='pt')
+            inputs = {k: v.to(self.device) for k, v in inputs.items()}
+            with torch.no_grad():
+                embeddings = self.model(**inputs).pooler_output  # 使用 DPR 的 pooler_output 作为嵌入
+            embeddings = embeddings.cpu().numpy()
             return {'embeddings': embeddings}
 
         return dataset.map(
@@ -46,6 +51,7 @@ class TextDatasetProcessor:
             }),
             num_proc=1  
         )
+
     def process(self, output_dir):
         titles, texts = self.load_json()
         dataset = Dataset.from_dict({
@@ -68,11 +74,21 @@ class TextDatasetProcessor:
 
 # 使用示例
 
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2').to(device)
-books=["/mnt/data/public/MM_Retinal_Image/texts/13_book1/book1_en.json","/mnt/data/public/MM_Retinal_Image/texts/14_book2/book2_en.json","/mnt/data/public/MM_Retinal_Image/texts/15_book3/book3_en.json","/mnt/data/public/MM_Retinal_Image/texts/16_book4/book4_en.json"]
-processor = TextDatasetProcessor(model, device)
+
+model = DPRContextEncoder.from_pretrained("facebook/dpr-ctx_encoder-single-nq-base").to(device)
+tokenizer = DPRContextEncoderTokenizerFast.from_pretrained("facebook/dpr-ctx_encoder-single-nq-base")
+
+processor = TextDatasetProcessor(model, tokenizer, device)
+books = [
+    "/mnt/data/public/MM_Retinal_Image/texts/13_book1/book1_en.json",
+    "/mnt/data/public/MM_Retinal_Image/texts/14_book2/book2_en.json",
+    "/mnt/data/public/MM_Retinal_Image/texts/15_book3/book3_en.json",
+    "/mnt/data/public/MM_Retinal_Image/texts/16_book4/book4_en.json"
+]
+
 for book in books:
     processor.set_json_path(book)   
-    processor.process("/home/jqxu/Ragas/text_datasets")
+    processor.process("/home/jqxu/Ragas/text_datasets/dpr-txt")
+print(f"Model: {model.__class__.__name__}")
+print(f"Tokenizer: {tokenizer.__class__.__name__}")

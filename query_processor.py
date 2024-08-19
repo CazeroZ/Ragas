@@ -17,45 +17,48 @@ class QueryProcessor:
         """将文件添加到仓库，并返回 URL。"""
         return git_image.add_file_to_repo(file_name)
 
-    def process_query(self, query: str, image_path: str, similar_path: str = None, description: str = None, labels: List[str] = None, reference_texts: List[str] = None):
-        """构造请求并打印消息。"""
-        messages = []
-        '''
-        if similar_path:
-            similar_url = self.get_file_url(similar_path)
-            messages.extend([
-                {"role": "system", "content": [{"type": "text", "text": "Answer Users question with the background information. The first image is the reference image which is similar to query image."}]},
-                {"role": "user", "content": [
-                    {"type": "image_url", "image_url": {"url": similar_url}}, 
-                    {"type": "text", "text": f"The background information you may use:\nThe description of the similar image (the first url) is: {description}"}]}
-            ])
-        '''
+    def process_query(self, image_path: str, description: str = None, labels: List[str] = None, reference_texts: List[str] = None):
+        messages = [
+            {
+                "role": "system",
+                "content": "You are an advanced medical assistant specializing in ophthalmology. Your task is to generate a detailed and structured report for a retinal fundus image. The report should include an analysis of the optic disc, macula, retinal blood vessels, retinal background, and cup-to-disc ratio. Use medical terminology accurately and provide reasoning for your observations."
+            }
+        ]
+        
         image_url = self.get_file_url(image_path)
-        if labels:
-            messages.append({
+        messages.append({
                 "role": "user",
                 "content": [
-                    {"type": "text", "text": f"Please answer the following question about the image: {query}"},
+                    {"type": "text", "text": f"Please generate a detailed report for the following retinal image:"},
                     {"type": "image_url", "image_url": {"url": image_url}}
                 ]
-            })
+        })
+        # 如果有标签信息，并且标签不为 "Unknown Disease"
+        if labels and labels[0] != "Unknown Disease":
+            
             labels_text = "\n".join([f"Label {i+1}: {label}" for i, label in enumerate(labels)])
             messages.append({
                 "role": "user",
-                "content": [{"type": "text", "text": f"All labels information:\n{labels_text}"}]
+                "content": [{"type": "text", "text": f"Here are some labels provided for the image:\n{labels_text}"}]
             })
 
-        # 然后添加所有参考文本的信息
+        # 添加参考文本的信息
         if reference_texts:
             reference_texts_concat = "\n\n".join(reference_texts)
             messages.append({
                 "role": "user",
-                "content": [{"type": "text", "text": f"Reference texts provided for context:\n{reference_texts_concat}"}]
+                "content": [{"type": "text", "text": f"Reference texts for context:\n{reference_texts_concat}"}]
             })
         
+        # 发送请求并生成注释
         print("Sending to OpenAI...")
         response = requests.post("https://api.bianxie.ai/v1/chat/completions", headers=self.headers, json={"model": 'gpt-4o', "messages": messages, "max_tokens": 3000})
-        print(response.json())
+        result = response.json()
+
+        # 输出生成的结果
+        print(result)
+        return result
+
 
 
 '''
