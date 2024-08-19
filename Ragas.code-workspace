@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../mnt/data/public/MM_Retinal_Image/MM_Retinal_dataset_v1/CFP"
+		},
+		{
+			"path": "../../../mnt/data/public/MM_Retinal_Image/texts"
+		},
+		{
+			"path": "../../../mnt/data/jqxu/Glaucoma"
+		},
+		{
+			"path": "../../../mnt/data/jqxu/MM_test"
+		}
+	],
+	"settings": {}
+}

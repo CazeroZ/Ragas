@@ -44,7 +44,7 @@ class ImageClassifier:
         elif disease == 'Diabetic':
             if out != 0:
                 return f'Diabetic level {out}'
-        return 'Healthy'
+        return 'Unknown Disease'
 
     def classify_image(self, image_path):
         img = Image.open(image_path).convert('RGB')
