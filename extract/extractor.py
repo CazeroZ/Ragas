@@ -52,10 +52,10 @@ class Extractor:
         }
         response = requests.post("https://api.bianxie.ai/v1/chat/completions", headers=self.headers, json=payloads)
         json_data = response.json()
-        print(json_data)
         if 'choices' in json_data and json_data['choices']:
             content = json_data['choices'][0]['message']['content']
             content=self.get_keywords(content)
+            print(content)
             return content
 
     
@@ -65,3 +65,4 @@ if __name__ == '__main__':
      api_key = 'REMOVED'
      extractor = Extractor(api_key=api_key)
      keywords = extractor(text)
+     print(f"keywords:{keywords}")

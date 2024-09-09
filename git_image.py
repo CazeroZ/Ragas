@@ -66,7 +66,7 @@ def delete_file_from_repo(file_name, repo_path='/home/jqxu/Ragas/datasets', bran
     origin = repo.remote(name='origin')
     origin.push(branch)  
 '''
-image_pth="/home/jqxu/Ragas/datasets/figure09-01-05.jpg"
+image_pth="/mnt/data/public/MM_Retinal_Image/MM_Retinal_dataset_v1/CFP/figure01-05-13a.jpg"
 url=get_file_url(image_pth)
 print(url)
 delete_file_from_repo(os.path.basename(image_pth))
