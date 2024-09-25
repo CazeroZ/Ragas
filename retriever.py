@@ -6,7 +6,7 @@ import numpy as np
 from datasets import load_from_disk
 from KeepFIT.keepfit.modeling.model import KeepFITModel
 from transformers import PreTrainedTokenizerFast, PreTrainedModel
-from sentence_transformers import SentenceTransformer, models 
+#from sentence_transformers import SentenceTransformer, models 
 class TextRetriever:
     def __init__(self, dataset_path, device):
         # 初始化设备
