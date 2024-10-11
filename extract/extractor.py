@@ -14,7 +14,7 @@ class Extractor:
     def get_keywords(self,string):
             keywords = string[string.find("[")+1:string.find("]")]
             keyword_list = keywords.split(',')
-            print(keyword_list)
+            #print(keyword_list)
             return keyword_list
     
     def __call__(self, text):
@@ -59,7 +59,6 @@ class Extractor:
             return content
 
     
-
 if __name__ == '__main__':
      text = "Are there signs of neovascularization (NYE) adjacent to the veins?"
      api_key = 'REMOVED'

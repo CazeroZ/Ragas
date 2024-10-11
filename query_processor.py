@@ -33,6 +33,7 @@ class QueryProcessor:
                     {"type": "image_url", "image_url": {"url": image_url}}
                 ]
         })
+        '''
         # 如果有标签信息，并且标签不为 "Unknown Disease"
         if labels and labels[0] != "Unknown Disease":
             
@@ -41,7 +42,7 @@ class QueryProcessor:
                 "role": "user",
                 "content": [{"type": "text", "text": f"Here are some labels provided for the image:\n{labels_text}"}]
             })
-
+        '''
         # 添加参考文本的信息
         if reference_texts:
             reference_texts_concat = "\n\n".join(reference_texts)
@@ -61,12 +62,11 @@ class QueryProcessor:
 
 
 
-'''
-api_key="REMOVED"
+
+'''api_key="REMOVED"
 headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {api_key}"
 }
 processor = QueryProcessor(headers)
-processor.process_query("What is in this image?", "/home/jqxu/Ragas/datasets/train1.jpeg", "/home/jqxu/Ragas/datasets/train2.jpeg", "It's an alien-technology built by the Transformer Optimus Prime!", ["Label1:oven", "Label2: nuclear-powered secret case"], ["Text about oven technology", "Text about secret cases"])
-'''
+processor.process_query( image_path="/home/jqxu/Ragas/datasets/figure02-17.jpg")`'''

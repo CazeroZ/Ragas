@@ -1,0 +1,713 @@
+[
+    {
+        "original_image": "figure17-1-9.png",
+        "retrieved_image1": "figure12-05-03.png",
+        "score1": 8.819369316101074,
+        "retrieved_image2": "figure15-4-9.jpg",
+        "score2": 9.381049156188965,
+        "retrieved_image3": "figure14-04-10A.jpg",
+        "score3": 11.315328598022461
+    },
+    {
+        "original_image": "figure2-14G.png",
+        "retrieved_image1": "figure2-14F.png",
+        "score1": 7.718276500701904,
+        "retrieved_image2": "figure15-5-3C.png",
+        "score2": 13.99317455291748,
+        "retrieved_image3": "figure9-14.png",
+        "score3": 15.318090438842773
+    },
+    {
+        "original_image": "figure08-15A.jpg",
+        "retrieved_image1": "figure09-05A.jpg",
+        "score1": 10.230491638183594,
+        "retrieved_image2": "figure08-14B.jpg",
+        "score2": 10.408430099487305,
+        "retrieved_image3": "figure09-10A.jpg",
+        "score3": 11.366134643554688
+    },
+    {
+        "original_image": "figure8-5-5A.png",
+        "retrieved_image1": "figure9-4-1A.png",
+        "score1": 3.9488439559936523,
+        "retrieved_image2": "figure9-4-6A.png",
+        "score2": 4.269222259521484,
+        "retrieved_image3": "figure15-1-19A.png",
+        "score3": 4.312262535095215
+    },
+    {
+        "original_image": "figure13-3-2D.png",
+        "retrieved_image1": "figure15-4-1A.png",
+        "score1": 3.536555051803589,
+        "retrieved_image2": "figure9-9-1A.png",
+        "score2": 3.6042513847351074,
+        "retrieved_image3": "figure12-1-12E.png",
+        "score3": 3.868056058883667
+    },
+    {
+        "original_image": "figure18-5-14.png",
+        "retrieved_image1": "figure18-5-22.png",
+        "score1": 17.92818832397461,
+        "retrieved_image2": "figure05-05-01c.jpg",
+        "score2": 21.53832244873047,
+        "retrieved_image3": "figure15-4-2.png",
+        "score3": 22.514894485473633
+    },
+    {
+        "original_image": "figure5-3-40.png",
+        "retrieved_image1": "figure8-1-2.png",
+        "score1": 2.598780870437622,
+        "retrieved_image2": "figure15-1-2.png",
+        "score2": 2.9979639053344727,
+        "retrieved_image3": "figure16-2-1A.png",
+        "score3": 3.0134172439575195
+    },
+    {
+        "original_image": "figure04-29B.jpg",
+        "retrieved_image1": "figure07-04A.jpg",
+        "score1": 3.2584221363067627,
+        "retrieved_image2": "figure09-10A.jpg",
+        "score2": 3.2758307456970215,
+        "retrieved_image3": "figure09-02B.jpg",
+        "score3": 3.316244602203369
+    },
+    {
+        "original_image": "figure04-08.jpg",
+        "retrieved_image1": "figure02-16.jpg",
+        "score1": 3.2624402046203613,
+        "retrieved_image2": "figure04-05C.jpg",
+        "score2": 3.5941882133483887,
+        "retrieved_image3": "figure03-18B.jpg",
+        "score3": 3.5984091758728027
+    },
+    {
+        "original_image": "figure18-10-6A.jpg",
+        "retrieved_image1": "figure18-10-6B.jpg",
+        "score1": 6.130518436431885,
+        "retrieved_image2": "figure15-3-1A.png",
+        "score2": 6.811898231506348,
+        "retrieved_image3": "figure6-3-24A.png",
+        "score3": 7.062517166137695
+    },
+    {
+        "original_image": "figure6-10A.png",
+        "retrieved_image1": "figure8-2B.png",
+        "score1": 10.268388748168945,
+        "retrieved_image2": "figure9-2C.png",
+        "score2": 10.742124557495117,
+        "retrieved_image3": "figure14-1-4A.png",
+        "score3": 10.774434089660645
+    },
+    {
+        "original_image": "figure8-4-9D.png",
+        "retrieved_image1": "figure9-4-13A.png",
+        "score1": 5.688010215759277,
+        "retrieved_image2": "figure8-3-9C.png",
+        "score2": 5.75831413269043,
+        "retrieved_image3": "figure13-9-1A.png",
+        "score3": 6.201633930206299
+    },
+    {
+        "original_image": "figure12-1-9B.png",
+        "retrieved_image1": "figure6-3-24B.png",
+        "score1": 5.83224630355835,
+        "retrieved_image2": "figure9-8-2A.png",
+        "score2": 6.152218818664551,
+        "retrieved_image3": "figure13-8-1A.png",
+        "score3": 6.707030296325684
+    },
+    {
+        "original_image": "figure12-09-02B.png",
+        "retrieved_image1": "figure12-09-02G.png",
+        "score1": 14.100961685180664,
+        "retrieved_image2": "figure12-09-01C.png",
+        "score2": 15.473461151123047,
+        "retrieved_image3": "figure12-03-05B.png",
+        "score3": 16.110061645507812
+    },
+    {
+        "original_image": "figure04-30A.jpg",
+        "retrieved_image1": "figure04-30B.jpg",
+        "score1": 3.01153564453125,
+        "retrieved_image2": "figure02-16.jpg",
+        "score2": 3.6850063800811768,
+        "retrieved_image3": "figure09-01A.jpg",
+        "score3": 4.015145778656006
+    },
+    {
+        "original_image": "figure6-3-22B.png",
+        "retrieved_image1": "figure6-3-22A.png",
+        "score1": 4.665523052215576,
+        "retrieved_image2": "figure6-2-18B.png",
+        "score2": 6.478982925415039,
+        "retrieved_image3": "figure13-2-3B.png",
+        "score3": 7.058381080627441
+    },
+    {
+        "original_image": "figure10-1-18A.png",
+        "retrieved_image1": "figure10-1-18B.png",
+        "score1": 3.509636878967285,
+        "retrieved_image2": "figure9-4-6A.png",
+        "score2": 3.7236135005950928,
+        "retrieved_image3": "figure13-3-2A.png",
+        "score3": 3.809291362762451
+    },
+    {
+        "original_image": "figure13-5-1B.png",
+        "retrieved_image1": "figure13-1-5B.png",
+        "score1": 2.400481700897217,
+        "retrieved_image2": "figure5-3-42B.png",
+        "score2": 2.7153689861297607,
+        "retrieved_image3": "figure12-1-12E.png",
+        "score3": 3.893073081970215
+    },
+    {
+        "original_image": "figure07-08A.jpg",
+        "retrieved_image1": "figure12-03-05A.png",
+        "score1": 16.016942977905273,
+        "retrieved_image2": "figure04-36A.jpg",
+        "score2": 17.0147705078125,
+        "retrieved_image3": "figure07-12B.jpg",
+        "score3": 17.062267303466797
+    },
+    {
+        "original_image": "figure3-6.png",
+        "retrieved_image1": "figure2-18A.png",
+        "score1": 8.137931823730469,
+        "retrieved_image2": "figure3-13A.png",
+        "score2": 8.477630615234375,
+        "retrieved_image3": "figure2-24A.png",
+        "score3": 9.158294677734375
+    },
+    {
+        "original_image": "figure8-3-7B.png",
+        "retrieved_image1": "figure8-3-7A.png",
+        "score1": 7.2858381271362305,
+        "retrieved_image2": "figure11-2-8A.png",
+        "score2": 7.358803749084473,
+        "retrieved_image3": "figure10-1-25B.png",
+        "score3": 7.51052713394165
+    },
+    {
+        "original_image": "figure07-10-01CB.png",
+        "retrieved_image1": "figure14-18-01A.png",
+        "score1": 9.996695518493652,
+        "retrieved_image2": "figure05-04-02b.jpg",
+        "score2": 10.049506187438965,
+        "retrieved_image3": "figure14-18-01B.png",
+        "score3": 11.936004638671875
+    },
+    {
+        "original_image": "figure02-17.jpg",
+        "retrieved_image1": "figure06-12A.jpg",
+        "score1": 7.101102352142334,
+        "retrieved_image2": "figure02-04A.jpg",
+        "score2": 7.641035556793213,
+        "retrieved_image3": "figure09-04A.jpg",
+        "score3": 7.782018661499023
+    },
+    {
+        "original_image": "figure04-13A.jpg",
+        "retrieved_image1": "figure04-14A.jpg",
+        "score1": 4.369492053985596,
+        "retrieved_image2": "figure06-09A.jpg",
+        "score2": 4.534473896026611,
+        "retrieved_image3": "figure09-08A.jpg",
+        "score3": 4.565045356750488
+    },
+    {
+        "original_image": "figure02-18.jpg",
+        "retrieved_image1": "figure05-03.jpg",
+        "score1": 8.688375473022461,
+        "retrieved_image2": "figure18-7-3.png",
+        "score2": 9.748029708862305,
+        "retrieved_image3": "figure02-17.jpg",
+        "score3": 9.919723510742188
+    },
+    {
+        "original_image": "figure5-4-11A.png",
+        "retrieved_image1": "figure16-1-7A.png",
+        "score1": 4.0240678787231445,
+        "retrieved_image2": "figure9-4-12F.png",
+        "score2": 4.283492088317871,
+        "retrieved_image3": "figure6-2-27A.png",
+        "score3": 4.427737236022949
+    },
+    {
+        "original_image": "figure10-1-27F.png",
+        "retrieved_image1": "figure10-1-27C.png",
+        "score1": 10.690975189208984,
+        "retrieved_image2": "figure10-1-27D.png",
+        "score2": 11.507587432861328,
+        "retrieved_image3": "figure10-1-27E.png",
+        "score3": 12.54915714263916
+    },
+    {
+        "original_image": "figure04-33B.jpg",
+        "retrieved_image1": "figure04-33A.jpg",
+        "score1": 2.103565216064453,
+        "retrieved_image2": "figure04-20A.jpg",
+        "score2": 3.550159215927124,
+        "retrieved_image3": "figure04-10C.jpg",
+        "score3": 3.9108355045318604
+    },
+    {
+        "original_image": "figure10-3-2A.png",
+        "retrieved_image1": "figure13-10-2A.png",
+        "score1": 2.8890717029571533,
+        "retrieved_image2": "figure6-3-4A.png",
+        "score2": 3.3884377479553223,
+        "retrieved_image3": "figure10-3-10A.png",
+        "score3": 3.634589910507202
+    },
+    {
+        "original_image": "figure18-8-1A.png",
+        "retrieved_image1": "figure05-01-02.jpg",
+        "score1": 4.232480049133301,
+        "retrieved_image2": "figure17-1-7.png",
+        "score2": 4.256513595581055,
+        "retrieved_image3": "figure14-10-02.jpg",
+        "score3": 4.547145366668701
+    },
+    {
+        "original_image": "figure08-08.jpg",
+        "retrieved_image1": "figure08-01.jpg",
+        "score1": 9.244478225708008,
+        "retrieved_image2": "figure08-40.jpg",
+        "score2": 10.52816390991211,
+        "retrieved_image3": "figure14-04-03.jpg",
+        "score3": 10.561775207519531
+    },
+    {
+        "original_image": "figure08-20C.jpg",
+        "retrieved_image1": "figure06-16A.jpg",
+        "score1": 3.6309266090393066,
+        "retrieved_image2": "figure08-13A.jpg",
+        "score2": 3.79764723777771,
+        "retrieved_image3": "figure04-26A.jpg",
+        "score3": 3.8616085052490234
+    },
+    {
+        "original_image": "figure15-1-17A.png",
+        "retrieved_image1": "figure13-8-2A.png",
+        "score1": 3.2124602794647217,
+        "retrieved_image2": "figure6-3-1.png",
+        "score2": 4.189050674438477,
+        "retrieved_image3": "figure15-1-14A.png",
+        "score3": 4.4056243896484375
+    },
+    {
+        "original_image": "figure20-1-2A.png",
+        "retrieved_image1": "figure20-3-10B.jpg",
+        "score1": 8.843832015991211,
+        "retrieved_image2": "figure20-1-2B.png",
+        "score2": 8.845717430114746,
+        "retrieved_image3": "figure20-8-3A.png",
+        "score3": 9.152230262756348
+    },
+    {
+        "original_image": "figure03-02B.jpg",
+        "retrieved_image1": "figure08-29A.jpg",
+        "score1": 2.9205210208892822,
+        "retrieved_image2": "figure06-08A.jpg",
+        "score2": 3.0995872020721436,
+        "retrieved_image3": "figure04-06A.jpg",
+        "score3": 3.3722004890441895
+    },
+    {
+        "original_image": "figure7-4.png",
+        "retrieved_image1": "figure7-6.png",
+        "score1": 8.04224681854248,
+        "retrieved_image2": "figure4-27.png",
+        "score2": 10.948827743530273,
+        "retrieved_image3": "figure4-2.png",
+        "score3": 11.090449333190918
+    },
+    {
+        "original_image": "figure9-6-1A.png",
+        "retrieved_image1": "figure11-1-19A.png",
+        "score1": 5.991790771484375,
+        "retrieved_image2": "figure10-4-9A.png",
+        "score2": 6.146087646484375,
+        "retrieved_image3": "figure9-9-5A.png",
+        "score3": 6.14655876159668
+    },
+    {
+        "original_image": "figure6-3-2A.png",
+        "retrieved_image1": "figure5-4-2A.png",
+        "score1": 3.866774320602417,
+        "retrieved_image2": "figure6-3-13A.png",
+        "score2": 4.087131977081299,
+        "retrieved_image3": "figure8-1-7A.png",
+        "score3": 4.3525238037109375
+    },
+    {
+        "original_image": "figure11-01-26b.jpg",
+        "retrieved_image1": "figure11-01-17.jpg",
+        "score1": 3.804521083831787,
+        "retrieved_image2": "figure11-03-03a.jpg",
+        "score2": 4.598820686340332,
+        "retrieved_image3": "figure07-09-03a.jpg",
+        "score3": 4.898216247558594
+    },
+    {
+        "original_image": "figure08-01.jpg",
+        "retrieved_image1": "figure08-03.jpg",
+        "score1": 7.027915954589844,
+        "retrieved_image2": "figure08-05.jpg",
+        "score2": 7.485085487365723,
+        "retrieved_image3": "figure08-39.jpg",
+        "score3": 7.553494930267334
+    },
+    {
+        "original_image": "figure03-20A.jpg",
+        "retrieved_image1": "figure03-20B.jpg",
+        "score1": 3.7328596115112305,
+        "retrieved_image2": "figure03-01B.jpg",
+        "score2": 6.752388954162598,
+        "retrieved_image3": "figure03-01A.jpg",
+        "score3": 8.27462387084961
+    },
+    {
+        "original_image": "figure02-33A.jpg",
+        "retrieved_image1": "figure04-05A.jpg",
+        "score1": 4.723506450653076,
+        "retrieved_image2": "figure09-01B.jpg",
+        "score2": 4.997637748718262,
+        "retrieved_image3": "figure07-06A.jpg",
+        "score3": 5.045099258422852
+    },
+    {
+        "original_image": "figure04-74A.jpg",
+        "retrieved_image1": "figure04-74B.jpg",
+        "score1": 3.19519305229187,
+        "retrieved_image2": "figure05-18.jpg",
+        "score2": 6.262712478637695,
+        "retrieved_image3": "figure07-12B.jpg",
+        "score3": 6.835568904876709
+    },
+    {
+        "original_image": "figure9-1-2B.png",
+        "retrieved_image1": "figure10-2-2B.png",
+        "score1": 3.604198932647705,
+        "retrieved_image2": "figure10-3-1B.png",
+        "score2": 3.62982439994812,
+        "retrieved_image3": "figure11-2-8B.png",
+        "score3": 3.9942853450775146
+    },
+    {
+        "original_image": "figure12-01-23.jpg",
+        "retrieved_image1": "figure06-02-11.jpg",
+        "score1": 6.649480819702148,
+        "retrieved_image2": "figure11-03-04.jpg",
+        "score2": 6.694584369659424,
+        "retrieved_image3": "figure07-04A.jpg",
+        "score3": 6.694930553436279
+    },
+    {
+        "original_image": "figure14-02-04D.png",
+        "retrieved_image1": "figure18-9-4A.png",
+        "score1": 3.246495008468628,
+        "retrieved_image2": "figure06-03-07.jpg",
+        "score2": 3.421743392944336,
+        "retrieved_image3": "figure15-4-10.jpg",
+        "score3": 3.458252429962158
+    },
+    {
+        "original_image": "figure6-3-12A.png",
+        "retrieved_image1": "figure15-1-26A.png",
+        "score1": 3.202440023422241,
+        "retrieved_image2": "figure16-1-20A.png",
+        "score2": 3.2918953895568848,
+        "retrieved_image3": "figure9-9-8A.png",
+        "score3": 3.7274441719055176
+    },
+    {
+        "original_image": "figure10-02-16f.jpg",
+        "retrieved_image1": "figure10-02-16i.jpg",
+        "score1": 4.716824054718018,
+        "retrieved_image2": "figure10-02-16a.jpg",
+        "score2": 7.097517967224121,
+        "retrieved_image3": "figure10-02-14f.jpg",
+        "score3": 7.701920509338379
+    },
+    {
+        "original_image": "figure04-60.jpg",
+        "retrieved_image1": "figure04-67.jpg",
+        "score1": 13.413509368896484,
+        "retrieved_image2": "figure04-44B.jpg",
+        "score2": 14.159941673278809,
+        "retrieved_image3": "figure04-17A.jpg",
+        "score3": 15.132848739624023
+    },
+    {
+        "original_image": "figure8-3-9B.png",
+        "retrieved_image1": "figure8-3-9A.png",
+        "score1": 3.5462498664855957,
+        "retrieved_image2": "figure10-1-26B.png",
+        "score2": 6.218451499938965,
+        "retrieved_image3": "figure10-1-10B.png",
+        "score3": 6.273501396179199
+    },
+    {
+        "original_image": "figure12-02-02.jpg",
+        "retrieved_image1": "figure12-02-01.jpg",
+        "score1": 3.359623908996582,
+        "retrieved_image2": "figure18-6-4A.png",
+        "score2": 4.1299333572387695,
+        "retrieved_image3": "figure11-04-03a.jpg",
+        "score3": 4.1934404373168945
+    },
+    {
+        "original_image": "figure14-17-01.jpg",
+        "retrieved_image1": "figure14-17-02.jpg",
+        "score1": 3.0155346393585205,
+        "retrieved_image2": "figure18-12-5B.png",
+        "score2": 4.189579486846924,
+        "retrieved_image3": "figure12-02-07.jpg",
+        "score3": 4.327888488769531
+    },
+    {
+        "original_image": "figure5-9A.png",
+        "retrieved_image1": "figure2-8A.png",
+        "score1": 5.769524574279785,
+        "retrieved_image2": "figure5-7A.png",
+        "score2": 7.047576904296875,
+        "retrieved_image3": "figure2-5A.png",
+        "score3": 7.138558864593506
+    },
+    {
+        "original_image": "figure5-4-22A.png",
+        "retrieved_image1": "figure13-1-4A.png",
+        "score1": 3.0552191734313965,
+        "retrieved_image2": "figure13-1-4B.png",
+        "score2": 3.4820094108581543,
+        "retrieved_image3": "figure13-5-1A.png",
+        "score3": 3.6033339500427246
+    },
+    {
+        "original_image": "figure04-24L.jpg",
+        "retrieved_image1": "figure04-24E.jpg",
+        "score1": 5.288229942321777,
+        "retrieved_image2": "figure07-09H.jpg",
+        "score2": 5.575596809387207,
+        "retrieved_image3": "figure03-16B.jpg",
+        "score3": 5.801033973693848
+    },
+    {
+        "original_image": "figure10-1-8B.png",
+        "retrieved_image1": "figure10-1-8A.png",
+        "score1": 4.1022467613220215,
+        "retrieved_image2": "figure10-1-25B.png",
+        "score2": 4.847377777099609,
+        "retrieved_image3": "figure10-3-10B.png",
+        "score3": 5.075107574462891
+    },
+    {
+        "original_image": "figure6-2-23.png",
+        "retrieved_image1": "figure5-3-49.png",
+        "score1": 3.4098317623138428,
+        "retrieved_image2": "figure18-9-7D.png",
+        "score2": 4.300222873687744,
+        "retrieved_image3": "figure5-2-4.png",
+        "score3": 4.529242515563965
+    },
+    {
+        "original_image": "figure2-25A.png",
+        "retrieved_image1": "figure3-1A.png",
+        "score1": 8.763894081115723,
+        "retrieved_image2": "figure9-4-12A.png",
+        "score2": 9.566527366638184,
+        "retrieved_image3": "figure10-1-25A.png",
+        "score3": 9.670608520507812
+    },
+    {
+        "original_image": "figure05-01-07b.jpg",
+        "retrieved_image1": "figure17-1-16D.png",
+        "score1": 3.271698474884033,
+        "retrieved_image2": "figure11-03-04.jpg",
+        "score2": 3.5756895542144775,
+        "retrieved_image3": "figure11-08-01.jpg",
+        "score3": 3.7178659439086914
+    },
+    {
+        "original_image": "figure5-3-12.png",
+        "retrieved_image1": "figure15-1-2.png",
+        "score1": 3.7227821350097656,
+        "retrieved_image2": "figure5-3-35.png",
+        "score2": 3.8227288722991943,
+        "retrieved_image3": "figure16-3-2AA.png",
+        "score3": 4.258112907409668
+    },
+    {
+        "original_image": "figure6-2-24.png",
+        "retrieved_image1": "figure05-03-02b.png",
+        "score1": 3.6204752922058105,
+        "retrieved_image2": "figure11-03-09a.jpg",
+        "score2": 3.865840196609497,
+        "retrieved_image3": "figure14-3-24.png",
+        "score3": 4.156042575836182
+    },
+    {
+        "original_image": "figure05-01-15.jpg",
+        "retrieved_image1": "figure05-01-14.jpg",
+        "score1": 9.886768341064453,
+        "retrieved_image2": "figure17-1-16A.png",
+        "score2": 12.460299491882324,
+        "retrieved_image3": "figure15-2-22.png",
+        "score3": 12.732268333435059
+    },
+    {
+        "original_image": "figure8-2-3D.png",
+        "retrieved_image1": "figure5-4-26A.png",
+        "score1": 4.02969217300415,
+        "retrieved_image2": "figure5-3-42A.png",
+        "score2": 4.053063869476318,
+        "retrieved_image3": "figure10-1-19A.png",
+        "score3": 4.401407241821289
+    },
+    {
+        "original_image": "figure05-34.jpg",
+        "retrieved_image1": "figure10-11A.jpg",
+        "score1": 4.938429832458496,
+        "retrieved_image2": "figure06-09A.jpg",
+        "score2": 5.124560356140137,
+        "retrieved_image3": "figure09-02B.jpg",
+        "score3": 5.307358741760254
+    },
+    {
+        "original_image": "figure5-2-11.png",
+        "retrieved_image1": "figure5-2-8.png",
+        "score1": 3.4085910320281982,
+        "retrieved_image2": "figure5-2-12.png",
+        "score2": 5.664934158325195,
+        "retrieved_image3": "figure05-06-01.jpg",
+        "score3": 5.7396063804626465
+    },
+    {
+        "original_image": "figure16-1-22A.png",
+        "retrieved_image1": "figure10-1-19A.png",
+        "score1": 4.067646503448486,
+        "retrieved_image2": "figure8-5-9A.png",
+        "score2": 4.597665786743164,
+        "retrieved_image3": "figure8-2-3A.png",
+        "score3": 4.63657283782959
+    },
+    {
+        "original_image": "figure15-2-10.png",
+        "retrieved_image1": "figure06-05-06.jpg",
+        "score1": 4.520818710327148,
+        "retrieved_image2": "figure17-1-5.png",
+        "score2": 5.173801422119141,
+        "retrieved_image3": "figure06-01-33.jpg",
+        "score3": 5.65934419631958
+    },
+    {
+        "original_image": "figure11-09-02A.png",
+        "retrieved_image1": "figure12-08-01A.png",
+        "score1": 5.8837056159973145,
+        "retrieved_image2": "figure11-1-18.png",
+        "score2": 6.335609436035156,
+        "retrieved_image3": "figure02-02-01.jpg",
+        "score3": 6.415236473083496
+    },
+    {
+        "original_image": "figure05-03-03.jpg",
+        "retrieved_image1": "figure12-03-05A.png",
+        "score1": 7.606424331665039,
+        "retrieved_image2": "figure14-3-25.png",
+        "score2": 10.09546947479248,
+        "retrieved_image3": "figure14-3-6.png",
+        "score3": 10.2363862991333
+    },
+    {
+        "original_image": "figure14-1-6.png",
+        "retrieved_image1": "figure3-3.png",
+        "score1": 21.63156509399414,
+        "retrieved_image2": "figure7-31B.png",
+        "score2": 24.26133918762207,
+        "retrieved_image3": "figure10-4-4A.png",
+        "score3": 25.505634307861328
+    },
+    {
+        "original_image": "figure10-02-12a.jpg",
+        "retrieved_image1": "figure10-02-13a.jpg",
+        "score1": 1.8928455114364624,
+        "retrieved_image2": "figure17-4-6.png",
+        "score2": 3.216639757156372,
+        "retrieved_image3": "figure11-03-06.jpg",
+        "score3": 3.4042105674743652
+    },
+    {
+        "original_image": "figure04-74M.jpg",
+        "retrieved_image1": "figure06-24B.jpg",
+        "score1": 10.566062927246094,
+        "retrieved_image2": "figure06-21A.jpg",
+        "score2": 11.441442489624023,
+        "retrieved_image3": "figure08-37A.jpg",
+        "score3": 11.458639144897461
+    },
+    {
+        "original_image": "figure10-1-24A.png",
+        "retrieved_image1": "figure16-1-5AB.png",
+        "score1": 3.3868789672851562,
+        "retrieved_image2": "figure13-1-4A.png",
+        "score2": 3.6226792335510254,
+        "retrieved_image3": "figure5-4-22A.png",
+        "score3": 3.6431519985198975
+    },
+    {
+        "original_image": "figure16-1-23A.png",
+        "retrieved_image1": "figure8-1-33A.png",
+        "score1": 4.763990879058838,
+        "retrieved_image2": "figure9-4-4A.png",
+        "score2": 4.85923957824707,
+        "retrieved_image3": "figure9-4-10A.png",
+        "score3": 5.327873229980469
+    },
+    {
+        "original_image": "figure8-1-3.png",
+        "retrieved_image1": "figure9-9-3.png",
+        "score1": 4.134081840515137,
+        "retrieved_image2": "figure8-1-1.png",
+        "score2": 4.179781436920166,
+        "retrieved_image3": "figure5-3-49.png",
+        "score3": 4.351693630218506
+    },
+    {
+        "original_image": "figure08-40A.jpg",
+        "retrieved_image1": "figure07-21B.jpg",
+        "score1": 3.1199092864990234,
+        "retrieved_image2": "figure08-20A.jpg",
+        "score2": 3.611083984375,
+        "retrieved_image3": "figure04-39.jpg",
+        "score3": 3.75236439704895
+    },
+    {
+        "original_image": "figure02-34B.jpg",
+        "retrieved_image1": "figure02-04A.jpg",
+        "score1": 4.929298400878906,
+        "retrieved_image2": "figure05-18.jpg",
+        "score2": 5.206711292266846,
+        "retrieved_image3": "figure02-21.jpg",
+        "score3": 5.318490028381348
+    },
+    {
+        "original_image": "figure15-1-2.png",
+        "retrieved_image1": "figure5-3-40.png",
+        "score1": 2.9979639053344727,
+        "retrieved_image2": "figure5-3-11.png",
+        "score2": 3.10196590423584,
+        "retrieved_image3": "figure5-3-49.png",
+        "score3": 3.1438112258911133
+    },
+    {
+        "original_image": "figure18-6-1.jpg",
+        "retrieved_image1": "figure02-06-13a.jpg",
+        "score1": 6.201821327209473,
+        "retrieved_image2": "figure10-02-21p.jpg",
+        "score2": 6.518157958984375,
+        "retrieved_image3": "figure10-02-20w.jpg",
+        "score3": 6.672123908996582
+    }
+]

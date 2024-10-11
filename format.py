@@ -1,44 +1,70 @@
+import json
 import re
 
-# 定义输入和输出文件路径
-file1_path = 'result.txt'
-file2_path = 'result_withoutRag.txt'
-output_file1 = 'sorted_result.txt'
-output_file2 = 'sorted_result_withoutRag.txt'
-
-# 函数：读取并解析文件，返回图片路径与对应描述的字典
-def parse_file(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
+# 定义解析txt文件并转换为JSON格式的函数
+def process_txt_to_json(txt_file_path, json_output_path):
+    with open(txt_file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 匹配 "Image path:" 开头的每个图片及其描述，使用正则表达式
-    pattern = r'Image path: (.*?)\n(.*?)\n(?=Image path:|\Z)'  # 匹配"Image path: "开头的每一块
-    matches = re.findall(pattern, content, re.DOTALL)
+    # 以100个'-'字符作为段落分隔符
+    sections = content.strip().split('-' * 100)
 
-    # 将图片路径与描述存储为字典
-    image_dict = {match[0]: match[1].strip() for match in matches}
-    return image_dict
+    parsed_data = []
 
-# 函数：根据图片路径排序字典
-def sort_by_image_path(image_dict):
-    return dict(sorted(image_dict.items()))
+    # 处理每一个段落
+    for section in sections:
+        section = section.strip()  # 去除首尾空白
+        image_info = {
+            "image_path": "",
+            "similar_image_path": "",
+            "original_description": "",
+            "keywords": [],
+            "retinal_report": "",
+            "combined_texts": ""  # 添加combined texts字段
+        }
+        
+        # 提取 'Image path' 和 'similar image path'
+        image_path_match = re.search(r'Image path:\s*(.*)', section)
+        if image_path_match:
+            image_info['image_path'] = image_path_match.group(1).strip()
+        
+        similar_image_path_match = re.search(r'similar image path:\s*(.*)', section)
+        if similar_image_path_match:
+            image_info['similar_image_path'] = similar_image_path_match.group(1).strip()
+        
+        # 提取 'Original Description'
+        original_description_match = re.search(r'Original Description:\s*(.*)', section)
+        if original_description_match:
+            image_info['original_description'] = original_description_match.group(1).strip()
+        
+        # 提取 'Extracted Keywords'
+        keywords_match = re.search(r'Extracted Keywords:\s*(\[.*\])', section)
+        if keywords_match:
+            image_info['keywords'] = eval(keywords_match.group(1).strip())
+        
+        # 提取报告内容：从 'Extracted Keywords' 到 '++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ++++++++++++++++++++++++++++++++++++++++++++'
+        report_match = re.search(r'Extracted Keywords:\s*\[.*\](.*?)\+{100}', section, re.S)
+        if report_match:
+            image_info['retinal_report'] = report_match.group(1).strip()
+        
+        # 提取 'Combined Texts'
+        combined_texts_match = re.search(r'Combined Texts:([\s\S]*)', section)
+        if combined_texts_match:
+            image_info['combined_texts'] = combined_texts_match.group(1).strip()
 
-# 函数：将排序后的字典保存到文件
-def write_sorted_file(output_path, image_dict):
-    with open(output_path, 'w', encoding='utf-8') as f:
-        for image_path, description in image_dict.items():
-            f.write(f"Image path: {image_path}\n{description}\n\n")
+        parsed_data.append(image_info)
 
-# 读取并解析两个文件
-file1_dict = parse_file(file1_path)
-file2_dict = parse_file(file2_path)
+    # 将结果写入JSON文件
+    with open(json_output_path, 'w', encoding='utf-8') as json_file:
+        json.dump(parsed_data, json_file, indent=4, ensure_ascii=False)
 
-# 将两个文件按图片路径排序
-sorted_file1_dict = sort_by_image_path(file1_dict)
-sorted_file2_dict = sort_by_image_path(file2_dict)
+    print(f"JSON文件已成功生成: {json_output_path}")
 
-# 写入排序后的文件
-write_sorted_file(output_file1, sorted_file1_dict)
-write_sorted_file(output_file2, sorted_file2_dict)
 
-print("文件已按图片路径排序并保存。")
+
+# 示例使用：读取txt文件并转换为JSON
+txt_file_path = "/home/jqxu/Ragas/results_tmp/result_Retclip.txt"  # 替换为你的txt文件路径
+json_output_path = "/home/jqxu/Ragas/results_tmp/tmp.json"  # 替换为你想保存的JSON文件路径
+
+# 执行转换函数
+process_txt_to_json(txt_file_path, json_output_path)
