@@ -98,6 +98,8 @@ class MMRetriever:
        
     def retrieve(self, image_pth, k=1):
         # Open the image and apply preprocessing
+               
+        
         image = Image.open(image_pth).convert("RGB")
         processed_img = self.preprocess(image).unsqueeze(0).to(self.device)  # Preprocess the image (PIL -> tensor)
         

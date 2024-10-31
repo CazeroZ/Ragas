@@ -5,16 +5,14 @@ import pandas as pd
 from retriever import MMRetriever
 import datasets
 from datasets import load_from_disk
-
+import tqdm
 # 加载数据集
 mmdataset = datasets.load_from_disk("/home/jqxu/Ragas/MM_feature_set/RET-clip_modified")
-image_dir = "/home/jqxu/Ragas/datasets"
+image_dir = "/mnt/data/public/MM_Retinal_Image/MM_Retinal_dataset_v1/CFP"
 
 # 获取所有图片路径
-image_paths = [os.path.join(image_dir, fname) for fname in os.listdir(image_dir) if fname.endswith(('.png', '.jpg', '.jpeg'))]
-# 修改图片路径前缀
-image_paths = [path.replace("/home/jqxu/Ragas/datasets", "/mnt/data/public/MM_Retinal_Image/MM_Retinal_dataset_v1/CFP") for path in image_paths]
-# 检查是否使用GPU
+image_paths = [fname for fname in os.listdir(image_dir) if fname.endswith(('.png', '.jpg', '.jpeg'))]
+image_paths=[os.path.join(image_dir, fname) for fname in image_paths]
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # 初始化检索器
@@ -24,7 +22,8 @@ mmRetriever = MMRetriever(device=device, dataset_path="/home/jqxu/Ragas/MM_featu
 results = []
 
 # 对每张图片进行检索
-for img_path in image_paths:
+
+for img_path in tqdm.tqdm(image_paths):
     # 使用检索器找到最相近的图片
     scores, retrieved_examples = mmRetriever.retrieve(img_path, k=3)
     
