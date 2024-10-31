@@ -1,7 +1,7 @@
 import json
 import requests
 from tqdm import tqdm
-
+from get_api_key import read_api_key
 class QueryProcessor:
     def __init__(self, headers):
         self.headers = headers
@@ -26,8 +26,8 @@ json_file_path = '/home/jqxu/Ragas/results_tmp/updated_result_Retclip.json'
 with open(json_file_path, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-# 设置 API 请求头
-api_key = "REMOVED"
+
+api_key =read_api_key("api_key.txt")
 headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {api_key}"
