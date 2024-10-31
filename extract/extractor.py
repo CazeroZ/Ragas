@@ -4,6 +4,8 @@ import json
 import re
 import os
 import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from get_api_key import read_api_key
 class Extractor:
     def __init__(self,model='gpt-3.5-turbo',api_key=None):
         self.model= model
@@ -56,12 +58,13 @@ class Extractor:
             content = json_data['choices'][0]['message']['content']
             content=self.get_keywords(content)
             print(content)
+
             return content
 
     
 if __name__ == '__main__':
      text = "Are there signs of neovascularization (NYE) adjacent to the veins?"
-     api_key = 'REMOVED'
+     api_key = read_api_key("api_key.txt")
      extractor = Extractor(api_key=api_key)
      keywords = extractor(text)
      print(f"keywords:{keywords}")

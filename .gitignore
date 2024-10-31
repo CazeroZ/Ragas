@@ -9,3 +9,5 @@ classifiers/
 RETCLIP/
 similarset/
 api_key.txt
+text_datasets/
+Ragas.code-workspace
